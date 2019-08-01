@@ -1,0 +1,77 @@
+.color-picker {
+  width: 200px;
+  padding: 10px;
+  display: inline-block;
+  background-color: #fff;
+  box-shadow: 0 0.15em 1.5em 0 rgba(0, 0, 0, .1), 0 0 1em 0 rgba(0, 0, 0, .03);
+}
+
+.color-picker-palette {
+  width: 100%;
+  height: 128px;
+  cursor: crosshair;
+  background-color: rgb(255, 0, 0);
+  background-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0)), linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+}
+
+.color-picker-slider {
+  width: 100%;
+  height: 8px;
+  margin-top: 10px;
+  position: relative;
+  cursor: ew-resize;
+}
+
+.color-picker-slider>i {
+  top: 0;
+  bottom: 0;
+  left: -3px;
+  display: block;
+  border: 3px solid;
+  user-select: none;
+  touch-action: none;
+  position: absolute;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+.color-picker-hue {
+  background: linear-gradient(90deg,red,#ff0,#0f0,#0ff,#00f,#f0f,red);
+}
+
+.color-picker-opacity {
+  background: linear-gradient(90deg, #000, transparent);
+}
+
+.color-picker-swatches {
+  overflow: scroll;
+  margin-top: 10px;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.color-picker-swatches::-webkit-scrollbar {
+  display: none;
+}
+
+.color-picker-swatches > button {
+  margin: 2px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: .15em;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+}
+
+.color-picker-controls {
+  margin-top: 10px;
+  user-select: none;
+}
+
+.color-picker-controls input {
+  outline: 0;
+  width: 100px;
+}
